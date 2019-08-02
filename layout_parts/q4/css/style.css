@@ -2,4 +2,43 @@
 
 /* 回答はここに書いてね */
 
+.q4__contents {
+  display: table;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #eff3f4;
+}
+
+.q4__contents__cell {
+  display: table-cell;
+  padding: 20px;
+  text-align: center;
+}
+
+.q4__contents:first-child {
+  padding-bottom: 0;
+}
+
+.is-pink {
+  width: 100px;
+  background-color: #fdc8b8;
+}
+.is-purple {
+  background-color: #e0abd9;
+}
+.is-bule {
+  width: 100px;
+  background-color: #b6d8ed;
+}
+.is-yellow {
+  background-color: #e5d32e;
+}
+.is-red {
+  background-color: #ec8f9a;
+}
+.is-green {
+  width: 500px;
+  background-color: #8fdcad;
+}
 /* 回答はここに書いてね */
