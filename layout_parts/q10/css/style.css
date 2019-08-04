@@ -6,40 +6,39 @@
   width: 500px;
   padding: 20px;
   margin: 0 auto;
-  font-size: 16px;
-  line-height: 16px;
+  /* font-size: 16px;
+  line-height: 16px; */
   border-radius: 30px;
   border: 5px solid #222;
-  background-color: #fff;
 }
 
+/* 共通の部分をまとめる */
+.q10__balloon:before,
+.q10__balloon:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  /* transparentは透明という意味 */
+  border: 20px solid transparent;
+  content: "";
+}
 
 /* beforeで三角の枠線 */
 .q10__balloon::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
   left: 30px;
-  bottom: -25px;
-  /* border: 20px solid #222 transparent; */
-  border-top: 20px solid #222;
-  border-right: 20px solid transparent;
-  border-left: 20px solid transparent;
+  bottom: -45px;
+  border-top-color: #222;
 }
 /* afterで三角表現 */
 .q10__balloon::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
   left: 30px;
-  bottom: -18px;
-  border-top: 20px solid #fff;
-  border-right: 20px solid transparent;
-  border-left: 20px solid transparent;
+  bottom: -38px;
+  border-top-color: #fff;
 }
 
+/* 確認修正してみて
+　　視覚的には同じようにできていたが、共通部分をまとめられていなかった点や、
+　　複雑に書いてしまっていた。*/
 /* 回答はここに書いてね */

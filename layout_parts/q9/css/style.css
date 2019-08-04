@@ -18,7 +18,7 @@
 	-webkit-transition: all .5s ease;
 	transition: all .5s ease;
 }
-.q9_img:hover img{
+.q9_img:hover img {
 	-webkit-transform: scale(1.5,1.5);
 	transform: scale(1.5,1.5);
 }
@@ -29,11 +29,11 @@
 	bottom:	-100%;
   left:	0;
 	width: 500px;
-	height: 333px;
-  background: linear-gradient(rgba(0, 0, 0, 0),
-  rgba(0, 0, 0,0.8)); 　　　　/*グラデーション*/
-	transition:	all 0.5s ease;
+  height: 333px;
+  /* backgroundは長くても改行しないバクル */
+  background: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0,0.8)); transition:	all 0.5s ease;
 }
+
 /* ホバーで上にずらす */
 .q9_img:hover .q9_desc {
   bottom: 0%;	
@@ -42,7 +42,8 @@
 /* q9_desc内でのtextの配置 */
 .q9_text {
   position:	absolute;
-  top: 55%;
+  /* top: 55%; */
+  bottom: 0;
   color:#fff;
   padding: 20px;
   word-break: break-all; /*文字の改行*/
@@ -73,6 +74,7 @@
   }
 }
 
+/* 始から終わりなので0%-100%,from-toどちらでも同じ */
 /* @keyframes turn{
   from{
     transform: rotate(0deg);
@@ -82,4 +84,9 @@
   }
 } */
 
+
+/* 確認修正してみて
+　　overflowで隠すこと、abusoluteでアニメション前後の配置して
+　　画像の拡大とテキストの表示２つのことができることが理解できた
+　　ローディングのアニメションも書き方と考え方をより理解することができた。 */
 /* 回答はここに書いてね */

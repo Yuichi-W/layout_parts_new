@@ -7,29 +7,30 @@
   padding: 20px;
   background-color: #eff3f4;
 }
-.content {
-  margin: 0 auto;
-}
-.content-thumb1 {
-  float: left;
-  margin-right: 20px;
+
+.content-thumb {
   margin-bottom: 10px;
 }
-.content-thumb1 > img {
+.content-thumb > img {
   vertical-align: bottom;
+}
+.is-left {
+  float: left;
+  margin-right: 20px;
+}
+.is-right {
+  float: right;
+  margin-left: 20px;
 }
 .content-text {
   font-size: 18px;
   line-height: 22px;
   word-break: break-all;
 }
-.content-thumb2 {
-  float: right;
-  margin-left: 20px;
-  margin-bottom: 10px;
-}
-.content-thumb2 > img {
-  vertical-align: bottom;
-}
+
+/* 確認、修正してみて
+名前のつけ方が１、２とかになっていたので注意
+また、共通の部分がある場合はまとめて書くようにする。
+コードをシンプルに */
 
 /* 回答はここに書いてね */

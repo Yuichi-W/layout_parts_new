@@ -6,13 +6,15 @@
   display: block;
   clear: both;
 }
+.box_layout {
+  width: 225px;
+}
 .float-text:first-child {
   margin-left: 0;
 }
 .float-text {
   float: left;
   margin-left: 50px;
-  width: 225px;
   box-sizing: border-box;
 }
 
@@ -25,7 +27,6 @@
 .table-text {
   display: table-cell;
   padding-left: 50px;
-  width: 225px;
   vertical-align: middle;
 }
 
@@ -38,7 +39,6 @@
 .inline-text {
   display: inline-block;
   margin-left: 50px;
-  width: 225px;
   font-size: 16px;
   vertical-align: middle;
   box-sizing: border-box;
@@ -50,7 +50,6 @@
   align-items: flex-end;
 }
 .flex-text {
-  width: 225px;
   box-sizing: border-box;
 }
 
@@ -58,16 +57,17 @@
 .is-full {
   font-size: 0;
 }
-
-.full-text-left {
-  display: inline-block;
-  float: left;
+.full-text {
   font-size: 16px;
+  vertical-align: top;
+}
+
+.full-left {
+  display: inline-block;
   width: 300px;
 }
-.full-text-right {
+.full-right {
   display: inline-block;
-  font-size: 16px;
   width: 100%;
   margin-left: -300px;
   padding-left: 350px;
@@ -79,5 +79,10 @@
   display: block;
   clear: both;
 }
+
+/* 確認修正してみて
+q７−４までは幅が同じなのでまとめる事できるがそれが出来ていなかった
+また、q７−５も共通のスタイルあるのでまとめる
+まとめることがなかなかの出来ていなかった */
 
 /* 回答はここに書いてね */

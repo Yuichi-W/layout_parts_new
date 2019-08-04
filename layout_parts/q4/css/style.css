@@ -1,44 +1,55 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-
+.q4__wrapper {
+  padding: 20px;
+  box-sizing: border-box;
+  
+}
 .q4__contents {
   display: table;
   width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
+  margin-top: 20px;
   background-color: #eff3f4;
 }
 
+.q4__contents:first-child {
+  margin-top: 0;
+}
 .q4__contents__cell {
   display: table-cell;
   padding: 20px;
   text-align: center;
 }
 
-.q4__contents:first-child {
-  padding-bottom: 0;
-}
 
-.is-pink {
+.q4__contents__cell.is-pink {
   width: 100px;
   background-color: #fdc8b8;
 }
-.is-purple {
+.q4__contents__cell.is-purple {
   background-color: #e0abd9;
 }
-.is-bule {
+.q4__contents__cell.is-bule {
   width: 100px;
   background-color: #b6d8ed;
 }
-.is-yellow {
+.q4__contents__cell.is-yellow {
   background-color: #e5d32e;
 }
-.is-red {
+.q4__contents__cell.is-red {
   background-color: #ec8f9a;
 }
-.is-green {
+.q4__contents__cell.is-green {
   width: 500px;
   background-color: #8fdcad;
 }
+
+/* 確認修正してみて
+　　全体をwrapperで囲ってpadding指定するのができていなかった。
+　　しなくてもできていたがmarginのところで考え方がシンプルでは
+　　なかったので囲った要素でpadding指定しわかりやすくするようにする
+
+　　なかのboxが全部.is-colorとしか書いていなかったので「なんの中にあるクラスな　　のかが分かるようにする。今回の場合は「.q4__contents__cell」*/
+
 /* 回答はここに書いてね */

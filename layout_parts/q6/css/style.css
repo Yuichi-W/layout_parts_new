@@ -5,23 +5,22 @@
 .q6__box__inner {
   text-align: center;
 }
+.q6__box__text {
+  padding: 10px 0;
+  width: 90px;
+  background-color: #e6f2ff;
+}
 
-.q6__box__text1 {
+.q6__box__text.is-text-align {
   display: inline-block;
-  padding: 10px 0;
-  width: 90px;
-  background-color: #e6f2ff;
 }
 
-.q6__box__text2 {
-  text-align: center;
+.q6__box__text.is-margin {
   margin: 0 auto;
-  padding: 10px 0;
-  width: 90px;
-  background-color: #e6f2ff;
+  text-align: center;
 }
 
-.table {
+.is-table {
   display: table;
 }
 .table-inner {
@@ -34,7 +33,7 @@
   padding: 10px;
   background: #fff;
 }
-.flex {
+.is-flex {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,4 +65,9 @@
   left: 50%;
   transform: translate(-50%,-50%);
 }
+
+/* 確認修正してみて
+　　まだ共通の部分をまとめてかけていないので
+　　共通のものを２度描くような手間をかけずにシンプルに描く
+ */
 /* 回答はここに書いてね */

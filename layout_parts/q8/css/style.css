@@ -2,26 +2,24 @@
 
 /* 回答はここに書いてね */
 
-
-.q8__btn__small {
+.q8__btn__com {
   display: inline-block;
   margin-left: 10px;
+  cursor: pointer;
+}
+.q8__btn__small {
   padding: 0 15px;
   line-height: 26px;
   border-radius: 3px;
   font-size: 16px;
 }
 .q8__btn__middle {
-  display: inline-block;
-  margin-left: 10px;
   padding: 0 20px;
   line-height: 32px;
   border-radius: 5px;
   font-size: 20px;
 }
 .q8__btn__large {
-  display: inline-block;
-  margin-left: 10px;
   padding: 0 25px;
   line-height: 38px;
   border-radius: 7px;
@@ -40,6 +38,7 @@
 .q8__btn-disabled {
   color: #fff;
   background-color: #e5e5e5;
+  cursor: default;
 }
 .q8__btn-shadow {
   color: #222;
@@ -123,22 +122,32 @@
 
 /* mainの入力欄 */
 
+/* デフォルトのCSSを打ち消す */
 .q8__input-init {
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* 入力フォームの共通スタイルまとめ */
+.q8__input {
   width: 100%;
   padding: 5px;
   border-radius: 3px;
-  background-color: #fff;
+  background-color: #FFF;
   font-size: 12px;
   line-height: 12px;
   box-sizing: border-box;
-  border: none;
-  outline: none;
 }
 /* フォーカスした時に影をつける */
-.q8__input-init:focus {
-  box-shadow: 0px 0px 5px 3px rgba(106, 192, 255, 0.4);
+.q8__input:focus {
+  box-shadow: 0 0 7px #00bcd4;
   }
-
 
 
 /* radio部分（性別） */
@@ -153,13 +162,13 @@
   display: inline-block;
   padding: 3px 3px 3px 20px;
 }
-.q8__radio__text::before {
+.q8__radio__text:before {
   position: absolute;
   top: 50%;
   left: 0;
   width: 14px;
   height: 14px;
-  margin-top: -8px;
+  margin-top: -8px; /*top margin-top 無くても配置変わらない*/
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 50%;
@@ -171,7 +180,7 @@
   left: 4px;
   width: 8px;
   height: 8px;
-  margin-top: -4px;
+  margin-top: -4px; /*topなしでmargin-topを半分の4pxでも変わらない*/
   background-color: #00BCD4;
   border-radius: 50%;
   content: '';
@@ -184,15 +193,12 @@
 .q8__select__body {
   width: 100%;
   padding: 5px;
-  border: none;
   border-radius: 3px;
   background: #fff;
   font-size: 12px;
   line-height: 12px;
   box-sizing: border-box;
   cursor: pointer;
-  /* selectボタンの初期化 */
-  -webkit-appearance: none;
 }
 .q8__select::after {
   display: block;
@@ -206,6 +212,7 @@
   border-bottom: 2px solid #e5e5e5;
   transform: rotate(45deg);
   content: "";
+  /* noneにすることで背後に隠れているセレクトボタン要素のイベントが発生 */
   pointer-events: none;
 }
 
@@ -259,7 +266,10 @@
   cursor: pointer;
   font-size: 16px;
   line-height: 26px;
-  border: none;
+}
+.q8__main__bottom__btn:active {
+  background-color: #FFF;
+  color: #00BCD4;
 }
 
 /* side 右側のtextarea */
@@ -275,7 +285,14 @@
   background-color: #fff;
   font-size: 12px;
   box-sizing: border-box;
+  /* 拡大縮小を禁止、サイズの固定を指定 */
   resize: none;
-  vertical-align: bottom;
 }
+.q8__side__text:focus {
+  box-shadow: 0 0 7px #00BCD4;
+  }
+
+  /* 確認修正してみて
+  　　入力フォームのデフォルトCSSを打ち消して新たにスタイリングしていくところが　　曖昧だったが確認して何がどう意味を持っているのかが理解できて、まとめて書く　　重要性がわかった。
+  　　また擬似クラスの意味もなんとなくだったが、再度調べて確認修正することで意味　　を理解することができた。 */
 /* 回答はここに書いてね */

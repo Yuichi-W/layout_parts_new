@@ -1,38 +1,49 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
-.table {
+.contents {
   width: 100%;
   table-layout: fixed;
   border: 1px solid #dedede;
   text-align: center;
   font-size: 18px;
   line-height: 26px;
-  /* vertical-align: middle;  */
 }
 
-th{
-  color: #fff;
-  background-color: #2244aa;
-  border-right: 1px solid #dedede;
-  border-bottom: 1px solid #dedede;
+.contents th, 
+.contents td {
   padding: 10px;
-}
-
-tbody tr:nth-child(even) :not(th) {
-  background-color: #ecf1f2;
-}
-tbody tr:last-child {
-  border-top: 2px dashed #000;
-}
-
-td {
-  padding: 10px 0;
-  font-size: 16px;
-  line-height: 22px;
   border: 1px solid #dedede;
   vertical-align: middle;
 }
+.contents th {
+  font-size: 18px;
+  line-height: 26px;
+  color: #fff;
+  background-color: #2244aa;
+}
+.contents td {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.contents > tbody > tr:nth-child(even) :not(th) {
+  background-color: #ecf1f2;
+}
+.contents > tbody > tr:last-child {
+  border-top: 2px dashed #000;
+}
 
 
+
+/*確認修正してみて
+クラス名の考え方contensを使用するようにする
+誰がみても分かるようにする
+th,tdなども「クラス名＋要素」として書く
+tbodyもなんの中にあるtbodyなのかを明記する
+
+.contents td {
+  font-size: 16px;
+  が見本にはなかったが、なくても見本は１６pxになっていた*/
 /* 回答はここに書いてね */
