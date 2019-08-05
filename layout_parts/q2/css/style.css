@@ -8,21 +8,22 @@
   background-color: #eff3f4;
 }
 
-.content-thumb {
+.content > img {
   margin-bottom: 10px;
-}
-.content-thumb > img {
   vertical-align: bottom;
 }
-.is-left {
+
+.content-top > img {
   float: left;
   margin-right: 20px;
 }
-.is-right {
+
+.content-bottom > img {
   float: right;
   margin-left: 20px;
 }
-.content-text {
+
+.content > p {
   font-size: 18px;
   line-height: 22px;
   word-break: break-all;
@@ -32,5 +33,9 @@
 名前のつけ方が１、２とかになっていたので注意
 また、共通の部分がある場合はまとめて書くようにする。
 コードをシンプルに */
+
+/* レビューをしていただいて
+　　レビュー前は,imgをdivで囲い textもdivで囲い pを２に分けと分かりずらくしていた
+　　レビューをしていただいてimgとpを一つのdivに納めた、すごくシンプルになった。またpを２つに分けていたのを１つにまとめ<br>で改行した。 */
 
 /* 回答はここに書いてね */

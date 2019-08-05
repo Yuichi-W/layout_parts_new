@@ -16,8 +16,6 @@
 .q10__balloon:before,
 .q10__balloon:after {
   position: absolute;
-  bottom: 0;
-  left: 0;
   width: 0;
   height: 0;
   /* transparentは透明という意味 */
@@ -31,6 +29,7 @@
   bottom: -45px;
   border-top-color: #222;
 }
+
 /* afterで三角表現 */
 .q10__balloon::after {
   left: 30px;
@@ -41,4 +40,7 @@
 /* 確認修正してみて
 　　視覚的には同じようにできていたが、共通部分をまとめられていなかった点や、
 　　複雑に書いてしまっていた。*/
+/* レビューをしていただいて
+　　before,afterでleft,bottom指定してるのに共通で共に０指定　　していたので削除。
+　　before,afterのbottomの調整はデベロッパーでみながら調整す　　る */
 /* 回答はここに書いてね */

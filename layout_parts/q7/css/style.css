@@ -6,36 +6,39 @@
   display: block;
   clear: both;
 }
+
 .box_layout {
   width: 225px;
+  box-sizing: border-box;
 }
+
 .float-text:first-child {
   margin-left: 0;
 }
+
 .float-text {
   float: left;
   margin-left: 50px;
-  box-sizing: border-box;
 }
 
 .table {
   display: table;
 }
+
 .table-text:first-child {
   padding-left: 0;
 }
+
 .table-text {
   display: table-cell;
   padding-left: 50px;
   vertical-align: middle;
 }
 
-.inline-text:first-child {
-  margin-left: 0;
-}
 .inner_inline {
   font-size: 0;
 }
+
 .inline-text {
   display: inline-block;
   margin-left: 50px;
@@ -43,20 +46,24 @@
   vertical-align: middle;
   box-sizing: border-box;
 }
+.inline-text:first-child {
+  margin-left: 0;
+}
 
 .flex {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
 }
+
 .flex-text {
   box-sizing: border-box;
 }
 
-
 .is-full {
   font-size: 0;
 }
+
 .full-text {
   font-size: 16px;
   vertical-align: top;
@@ -66,6 +73,7 @@
   display: inline-block;
   width: 300px;
 }
+
 .full-right {
   display: inline-block;
   width: 100%;
@@ -74,15 +82,13 @@
   box-sizing: border-box;
 }
 
-.clearfix {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 /* 確認修正してみて
 q７−４までは幅が同じなのでまとめる事できるがそれが出来ていなかった
 また、q７−５も共通のスタイルあるのでまとめる
 まとめることがなかなかの出来ていなかった */
+/* レビューをしていただいて
+　　元々あるクラスを使用していたため改善
+　　共通のwidth/box-sizingをまとめた
+　　 */
 
 /* 回答はここに書いてね */

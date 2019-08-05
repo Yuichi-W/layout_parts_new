@@ -10,36 +10,40 @@
   display: table;
   width: 100%;
   margin-top: 20px;
-  background-color: #eff3f4;
 }
 
 .q4__contents:first-child {
   margin-top: 0;
 }
+
 .q4__contents__cell {
   display: table-cell;
   padding: 20px;
   text-align: center;
 }
 
-
 .q4__contents__cell.is-pink {
   width: 100px;
   background-color: #fdc8b8;
 }
+
 .q4__contents__cell.is-purple {
   background-color: #e0abd9;
 }
+
 .q4__contents__cell.is-bule {
   width: 100px;
   background-color: #b6d8ed;
 }
+
 .q4__contents__cell.is-yellow {
   background-color: #e5d32e;
 }
+
 .q4__contents__cell.is-red {
   background-color: #ec8f9a;
 }
+
 .q4__contents__cell.is-green {
   width: 500px;
   background-color: #8fdcad;
@@ -49,7 +53,8 @@
 　　全体をwrapperで囲ってpadding指定するのができていなかった。
 　　しなくてもできていたがmarginのところで考え方がシンプルでは
 　　なかったので囲った要素でpadding指定しわかりやすくするようにする
-
 　　なかのboxが全部.is-colorとしか書いていなかったので「なんの中にあるクラスな　　のかが分かるようにする。今回の場合は「.q4__contents__cell」*/
+/* レビューをしていただいて
+　　contentsに背景つけていたので外した　スタイルごとに改行する */
 
 /* 回答はここに書いてね */
